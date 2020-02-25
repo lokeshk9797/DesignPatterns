@@ -6,10 +6,11 @@ using System.Threading.Tasks;
 
 namespace SOLID.DIP
 {
-
-    // hl modules should not depend on low-level; both should depend on abstractions
-    // abstractions should not depend on details; details should depend on abstractions
-
+    /*Dependency Inversion Principle is a way to decouple software modules.
+         This principle states that :-
+         High-level modules should not depend on low-level modules. Both should depend on abstractions.
+         Abstractions should not depend on details. Details should depend on abstractions.
+     */
     public enum Relationship
     {
         Parent,

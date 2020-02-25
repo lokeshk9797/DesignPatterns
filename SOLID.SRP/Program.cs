@@ -11,6 +11,8 @@ namespace SOLID.SRP
 {
     class Program
     {
+        /*Single Responsibility Principle states that every module or class should have responsibility
+        over a single part of the functionality provided by the software.*/
         //class stroes a couple of journal entries
         public class Journal
         {

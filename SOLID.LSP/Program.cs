@@ -8,10 +8,15 @@ namespace SOLID.LSP
 {
     public class Rectangle
     {
+        /*
+        Liskov substitution principle states
+        that if S is a subtype of T, then objects of type T may be replaced(or substituted) with objects of type S.
+        */
+
         //public int Width { get; set; }
         //public int Height { get; set; }
 
-        // to implement LSP
+        // to implement Liscov Substitution Priniple
         public virtual int Height { get; set; }
         public virtual int Width { get; set; }
 

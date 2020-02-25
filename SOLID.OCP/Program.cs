@@ -7,7 +7,7 @@ using static SOLID.OCP.Program;
 
 namespace SOLID.OCP
 {
-
+    /*Open/Closed principle states that software entities(classes, modules, functions, etc.) should be open for extensions, but closed for modification.*/
     public enum Colour
     {
         red, blue, green
@@ -146,7 +146,7 @@ namespace SOLID.OCP
 
     class Program
     {
-        
+
         static void Main(string[] args)
         {
             var apple = new Product("Apple", Size.medium, Colour.red);
@@ -173,7 +173,7 @@ namespace SOLID.OCP
             }
             Console.WriteLine("\n\n Getting Red Coloured and Medium Product (Old)");
 
-            foreach (var p in ProductFilter.FilterByColourAndSize(products,Colour.red,Size.medium))
+            foreach (var p in ProductFilter.FilterByColourAndSize(products, Colour.red, Size.medium))
             {
                 Console.WriteLine($" -{p.Name} is Medium Size and Red coloured ");
             }
@@ -194,8 +194,8 @@ namespace SOLID.OCP
             //Combination Filters
             Console.WriteLine("\n\n Getting Red Coloured and Medium Product (New)");
 
-            foreach (var p in bf.Filter(products,new AndSpecification<Product>(
-                new SizeSpecification(Size.medium),new ColourSpecification(Colour.red))))
+            foreach (var p in bf.Filter(products, new AndSpecification<Product>(
+                new SizeSpecification(Size.medium), new ColourSpecification(Colour.red))))
             {
                 Console.WriteLine($" -{p.Name} is Medium Size and Red coloured ");
 
