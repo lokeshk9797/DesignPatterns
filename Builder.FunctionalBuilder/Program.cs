@@ -9,6 +9,10 @@ namespace Builder.FunctionalBuilder
     public class Person
     {
         public string Name, Position;
+        public override string ToString()
+        {
+            return $"\n{nameof(Name)}: {Name}, \n{nameof(Position)}: {Position}";
+        }
     }
     public class PersonBuilder
     {
@@ -46,8 +50,7 @@ namespace Builder.FunctionalBuilder
             var person = pb.Called("Lokesh")
                             .WorksAsA("Developer")
                             .Build();
-
-
+            Console.WriteLine(person);
         }
     }
 }
