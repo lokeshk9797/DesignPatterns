@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SOLID.DIP", "SOLID.DIP\SOLI
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Builder", "Builder\Builder.csproj", "{389F0331-8DE0-4E68-BD4E-C38981214812}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Builder.Fluent.RecursiveGenerics", "Builder.Fluent.RecursiveGenerics\Builder.Fluent.RecursiveGenerics.csproj", "{FBC98A63-15CC-4285-8C86-86233F8F3C7F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{389F0331-8DE0-4E68-BD4E-C38981214812}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{389F0331-8DE0-4E68-BD4E-C38981214812}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{389F0331-8DE0-4E68-BD4E-C38981214812}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FBC98A63-15CC-4285-8C86-86233F8F3C7F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FBC98A63-15CC-4285-8C86-86233F8F3C7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FBC98A63-15CC-4285-8C86-86233F8F3C7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FBC98A63-15CC-4285-8C86-86233F8F3C7F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
