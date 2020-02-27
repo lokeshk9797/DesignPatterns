@@ -10,8 +10,7 @@ namespace Factory.Problem
 
     namespace DotNetDesignPatternDemos.Creational.Factories
     {
-        
-
+        //The point classes requires lots of constructors and two contructors with same number of arguements cannot exists
         public class Point
         {
 
