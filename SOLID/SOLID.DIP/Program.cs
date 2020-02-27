@@ -52,17 +52,17 @@ namespace SOLID.DIP
 
     public class Research
     {
-        public Research(Relationships relationships)
-        {
-            // high-level: find all of john's children
-            //var relations = relationships.Relations;
-            //foreach (var r in relations
-            //  .Where(x => x.Item1.Name == "John"
-            //              && x.Item2 == Relationship.Parent))
-            //{
-            //  WriteLine($"John has a child called {r.Item3.Name}");
-            //}
-        }
+        //public Research(Relationships relationships)
+        //{
+        //    //high - level: find all of john's children
+        //    var relations = relationships.Relations;
+        //    foreach (var r in relations
+        //      .Where(x => x.Item1.Name == "John"
+        //                  && x.Item2 == Relationship.Parent))
+        //    {
+        //        Console.WriteLine($"John has a child called {r.Item3.Name}");
+        //    }
+        //}
 
         public Research(IRelationshipBrowser browser)
         {
@@ -84,6 +84,9 @@ namespace SOLID.DIP
             relationships.AddParentAndChild(parent, child2);
 
             new Research(relationships);
+
+
+
 
         }
     }
