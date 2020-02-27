@@ -97,9 +97,13 @@ namespace Factory.Solution
                 return new Point(rho * Math.Cos(theta), rho * Math.Sin(theta));
             }
         }
+        public override string ToString()
+        {
+            return $"x:{x}, y:{y}";
+        }
     }
 
-   
+
     class Demo
     {
         static void Main(string[] args)
@@ -109,6 +113,8 @@ namespace Factory.Solution
 
             //Inner Factory Call
             var p2 = Point.Factory.NewCartesianPoint(1, 2);
+
+            Console.WriteLine(p2);
         }
     }
 }
